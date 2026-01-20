@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  node-version: 18
+  
 jobs:
   My_build:
     runs-on: ubuntu-latest
