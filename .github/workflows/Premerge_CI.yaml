@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  node-version: 18
+  NODE_VERSION: 18
   
 jobs:
   My_build:
@@ -20,4 +20,4 @@ jobs:
       - name: Use Node version
         uses: actions/setup-node@v3
         with:
-          node-version: {{ env.node-version }} 
+          node-version: ${{ env.NODE_VERSION }} 
