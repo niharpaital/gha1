@@ -1,0 +1,20 @@
+name: First_GITHUB Action Code
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  My_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: Use Node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
